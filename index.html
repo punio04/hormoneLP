@@ -2691,12 +2691,170 @@
         line-height: 2rem
       }
     }
+
+    .movie {
+      max-width: 960px;
+      margin: 8em auto 8em;
+      display: flex;
+      flex-wrap: nowrap;
+      background-image: url(../img/recommend_movie_bg.png);
+      border: 2px solid #1f2a54;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-right: 50px;
+      padding-left: 50px;
+      overflow: hidden;
+    }
+
+    .movie_title {
+      width: 45%;
+      font-size: 1.8rem;
+      line-height: 1.8;
+    }
+
+    .movie_title h2 {
+      color: #1f2a54;
+      font-size: 1.5em;
+      line-height: 1.6em;
+      vertical-align: middle;
+      padding: 4em .5em;
+      letter-spacing: .3rem;
+      font-weight: 600;
+    }
+
+    .pc {
+      display: block;
+    }
+
+    .sp {
+      display: none;
+    }
+
+    .movie_area {
+      width: 55%;
+    }
+
+    .movie_area iframe.tscplayer_inline {
+      width: 100%;
+      height: 100%;
+    }
+
+    .movie_title h2 {
+      color: #1f2a54;
+      font-size: 1.5em;
+      line-height: 1.6em;
+      vertical-align: middle;
+      padding: 4em .5em;
+      letter-spacing: .3rem;
+      font-weight: 600;
+      text-align: center;
+      font-family: '游明朝', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', serif;
+    }
+
+    @media screen and (max-width: 768px) {
+      .movie {
+        flex-wrap: wrap;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+
+      .movie_title,
+      .movie_area {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .movie_title {
+        text-align: center;
+        margin: 2em auto;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .movie_title h2 {
+        font-size: 3em;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .pc {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .sp {
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+
+      .movie_title,
+      .movie_area {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .movie_title h2 {
+        font-size: 1em;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .movie {
+        max-width: 960px;
+        margin: 3em auto 3em;
+      }
+
+      ._Section__titleLevel1 {
+        margin: 46px 0 20px 0;
+        text-align: center;
+      }
+
+      ._Section__titleLevel1Text {
+        margin-top: -3px;
+        margin-bottom: -3px;
+        line-height: 1.125;
+        font-size: 1.8rem;
+      }
+
+      ._Faq__content {
+        width: 300px !important;
+        margin: 0 auto !important;
+      }
+
+      ._FaqItem__title {
+        line-height: 1.57142857143;
+        font-size: 1.4rem !important;
+        padding: 12px 0px 12px 40px !important;
+      }
+
+      ._Section__titleLevel1Text {
+        margin: 40px 0;
+        margin-top: -2px;
+        margin-bottom: -2px;
+        line-height: 1.11111111111;
+        font-size: 2.2rem !important;
+      }
+
+      ._Faq {
+        padding: 12px 0px 12px 0px !important
+      }
+    }
   </style>
 
 
-<link rel="stylesheet" href="all.css">
-<link rel="stylesheet" href="pc.css">
-<link rel="stylesheet" href="libs.css">
+  <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href="pc.css">
+  <link rel="stylesheet" href="libs.css">
 </head>
 
 <body cz-shortcut-listen="true">
@@ -2715,51 +2873,72 @@
 
   <section class="">
     <img class="w-full hidden sm:block" src="images/mv.png" alt="">
-    <img class="w-full sm:hidden" src="images/mv.png" alt="">
+    <img class="w-full sm:hidden" src="images/mv-sp.webp" alt="">
 
     <div class="relative z-10">
-      <img class="w-full hidden sm:block" src="images/toptext.png" alt="">
-      <img class="w-full sm:hidden" src="images/toptext.png" alt="">
+      <img class="w-full hidden sm:block" src="images/toptext.webp" alt="">
+      <img class="w-full sm:hidden" src="images/toptext-sp.webp" alt="">
     </div>
 
     <div class="relative z-0 -mt-[14vw]">
-      <img class="w-full hidden sm:block" src="images/case.png" alt="">
-      <img class="w-full sm:hidden" src="images/case.png" alt="">
+      <img class="w-full hidden sm:block" src="images/case.webp" alt="">
+      <img class="w-full sm:hidden" src="images/case-sp.webp" alt="">
     </div>
 
     <div class="relative z-0">
-      <img class="w-full hidden sm:block" src="images/case2.png" alt="">
-      <img class="w-full sm:hidden" src="images/case2.png" alt="">
+      <img class="w-full hidden sm:block" src="images/case2.webp" alt="">
+      <img class="w-full sm:hidden" src="images/case2-sp.webp" alt="">
     </div>
 
     <div class="relative z-0">
-      <img class="w-full hidden sm:block" src="images/solution.png" alt="">
-      <img class="w-full sm:hidden" src="images/solution.png" alt="">
+      <img class="w-full hidden sm:block" src="images/solution.webp" alt="">
+      <img class="w-full sm:hidden" src="images/solution-sp.webp" alt="">
     </div>
 
     <div class="relative z-0">
-      <img class="w-full hidden sm:block" src="images/question.png" alt="">
-      <img class="w-full sm:hidden" src="images/question.png" alt="">
+      <img class="w-full hidden sm:block" src="images/question.webp" alt="">
+      <img class="w-full sm:hidden" src="images/question-sp.webp" alt="">
     </div>
 
     <div class="relative z-0">
-      <img class="w-full hidden sm:block" src="images/use.png" alt="">
-      <img class="w-full sm:hidden" src="images/use.png" alt="">
+      <img class="w-full hidden sm:block" src="images/use.webp" alt="">
+      <img class="w-full sm:hidden" src="images/use-sp.webp" alt="">
+    </div>
+
+
+
+
+
+    <section class="movie">
+      <div class="movie_title">
+        <h2>実際に注射の様子も
+          <br class="pc"><br class="sp"> ご覧ください。
+        </h2>
+      </div>
+      <div class="movie_area">
+        <iframe class="tscplayer_inline" id="embeddedSmartPlayerInstance"
+          src="recommend_movie/recommend_movie_player.html?embedIFrameId=embeddedSmartPlayerInstance" scrolling="no"
+          frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <div class="relative z-0">
+      <img class="w-full hidden sm:block" src="images/content.webp" alt="">
+      <img class="w-full sm:hidden" src="images/content-sp.webp" alt="">
     </div>
 
     <div class="relative z-0">
-      <img class="w-full hidden sm:block" src="images/content.png" alt="">
-      <img class="w-full sm:hidden" src="images/content.png" alt="">
-    </div>
-
-    <div class="relative z-0">
-      <img class="w-full hidden sm:block" src="images/fee.png" alt="">
-      <img class="w-full sm:hidden" src="images/fee.png" alt="">
-    </div>
-
-    <div class="relative z-0">
-      <img class="w-full hidden sm:block" src="images/faq.png" alt="">
-      <img class="w-full sm:hidden" src="images/faq.png" alt="">
+      <img class="w-full hidden sm:block" src="images/fee.webp" alt="">
+      <img class="w-full sm:hidden" src="images/fee-sp.webp" alt="">
     </div>
 
 
