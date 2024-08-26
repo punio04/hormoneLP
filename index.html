@@ -2751,6 +2751,29 @@
       font-family: '游明朝', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', serif;
     }
 
+    #parts {
+      background: linear-gradient(329deg, #1d2853 0%, #41496e 56%, #1c2752 100%);
+      padding: 20px 0;
+    }
+
+    .cmnBtn01 {
+      text-align: center;
+    }
+
+    .cmnBtn01 a {
+      display: inline-block;
+      width: 380px;
+      padding: 18px 0 16px;
+      background: #ffffffa1;
+      -webkit-border-radius: 30px;
+      border-radius: 4px;
+      color: #1c2651;
+      font-size: 1.9rem;
+      text-align: center;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
     @media screen and (max-width: 768px) {
       .movie {
         flex-wrap: wrap;
@@ -2848,6 +2871,31 @@
       ._Faq {
         padding: 12px 0px 12px 0px !important
       }
+
+      #conts .featureSec .cmnBtn01 {
+        background: #1c2651;
+        padding: 0px;
+      }
+
+      #contents .cmnBtn01 a {
+        width: 280px;
+        padding: 14px 0;
+        font-size: 1.6rem;
+      }
+
+      .cmnBtn01 a {
+        display: inline-block;
+        width: 240px;
+        padding: 5px 0 5px;
+        background: #ffffffa1;
+        -webkit-border-radius: 30px;
+        border-radius: 4px;
+        color: #1c2651;
+        font-size: 1.3rem;
+        text-align: center;
+        font-weight: 500;
+        text-decoration: none;
+      }
     }
   </style>
 
@@ -2863,7 +2911,7 @@
       <img class="h-full inline-block" src="images/logo.png" alt="">
     </a>
     <div class="w-[40%] sm:w-[240px]">
-      <a class="block w-full hover:opacity-70 transition-all" href="./#contact">
+      <a class="block w-full hover:opacity-70 transition-all" href="#contact">
         <img class="w-full hidden sm:block" src="images/contact-btn.png" alt="">
         <img class="w-full sm:hidden" src="images/contact-btn.png" alt="">
       </a>
@@ -2935,6 +2983,16 @@
       <img class="w-full hidden sm:block" src="images/content.webp" alt="">
       <img class="w-full sm:hidden" src="images/content-sp.webp" alt="">
     </div>
+
+    <div class="relative z-0">
+      <img class="w-full hidden sm:block" src="images/consultation.webp" alt="">
+      <img class="w-full sm:hidden" src="images/consultation-sp.webp" alt="">
+    </div>
+    <section class="listSec cmnTrial featureSec" id="parts">
+      <div class="cmnBtn01">
+        <a href="#contact" target="">【診察予約について】</a>
+      </div>
+    </section>
 
     <div class="relative z-0">
       <img class="w-full hidden sm:block" src="images/fee.webp" alt="">

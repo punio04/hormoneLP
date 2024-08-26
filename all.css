@@ -3497,7 +3497,7 @@ a:visited {
 }
 
 html:not(.is-mobile) a:hover {
-  color: #006494
+  opacity: 0.8;
 }
 
 html:not(.is-mobile) a:visited:hover {
