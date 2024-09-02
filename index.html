@@ -2692,63 +2692,12 @@
       }
     }
 
-    .movie {
-      max-width: 960px;
-      margin: 8em auto 8em;
-      display: flex;
-      flex-wrap: nowrap;
-      background-image: url(../img/recommend_movie_bg.png);
-      border: 2px solid #1f2a54;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      padding-right: 50px;
-      padding-left: 50px;
-      overflow: hidden;
-    }
-
-    .movie_title {
-      width: 45%;
-      font-size: 1.8rem;
-      line-height: 1.8;
-    }
-
-    .movie_title h2 {
-      color: #1f2a54;
-      font-size: 1.5em;
-      line-height: 1.6em;
-      vertical-align: middle;
-      padding: 4em .5em;
-      letter-spacing: .3rem;
-      font-weight: 600;
-    }
-
     .pc {
       display: block;
     }
 
     .sp {
       display: none;
-    }
-
-    .movie_area {
-      width: 55%;
-    }
-
-    .movie_area iframe.tscplayer_inline {
-      width: 100%;
-      height: 100%;
-    }
-
-    .movie_title h2 {
-      color: #1f2a54;
-      font-size: 1.5em;
-      line-height: 1.6em;
-      vertical-align: middle;
-      padding: 4em .5em;
-      letter-spacing: .3rem;
-      font-weight: 600;
-      text-align: center;
-      font-family: '游明朝', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', serif;
     }
 
     #parts {
@@ -2775,36 +2724,6 @@
     }
 
     @media screen and (max-width: 768px) {
-      .movie {
-        flex-wrap: wrap;
-      }
-    }
-
-    @media screen and (max-width: 768px) {
-
-      .movie_title,
-      .movie_area {
-        width: 100%;
-      }
-    }
-
-    @media screen and (max-width: 768px) {
-      .movie_title {
-        text-align: center;
-        margin: 1em auto;
-      }
-    }
-
-    @media screen and (max-width: 768px) {
-      .movie_title h2 {
-        font-size: 3em;
-        padding: 0;
-        margin: 0 auto;
-        text-align: center;
-      }
-    }
-
-    @media screen and (max-width: 768px) {
       .pc {
         display: none;
       }
@@ -2817,33 +2736,6 @@
     }
 
     @media screen and (max-width: 768px) {
-
-      .movie_title,
-      .movie_area {
-        width: 100%;
-      }
-    }
-
-    @media screen and (max-width: 768px) {
-      .movie_title h2 {
-        font-size: 1em;
-        padding: 0;
-        margin: 0 auto;
-        text-align: center;
-      }
-
-      .movie {
-        max-width: 340px;
-        margin: 3em auto 3em;
-      }
-
-      .movie {
-        padding-top: 15px;
-        padding-bottom: 30px;
-        padding-right: 15px;
-        padding-left: 15px;
-      }
-
       ._Section__titleLevel1 {
         margin: 46px 0 20px 0;
         text-align: center;
@@ -2965,32 +2857,6 @@
       <img class="w-full sm:hidden" src="images/use-sp.webp" alt="">
     </div>
 
-
-
-
-
-    <section class="movie">
-      <div class="movie_title">
-        <h2>実際に注射の様子も
-          <br class="pc"><br class="sp"> ご覧ください。
-        </h2>
-      </div>
-      <div class="movie_area">
-        <iframe class="tscplayer_inline" id="embeddedSmartPlayerInstance"
-          src="recommend_movie/recommend_movie_player.html?embedIFrameId=embeddedSmartPlayerInstance" scrolling="no"
-          frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-      </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
     <div class="relative z-0">
       <img class="w-full hidden sm:block" src="images/content.webp" alt="">
       <img class="w-full sm:hidden" src="images/content-sp.webp" alt="">
@@ -3080,7 +2946,6 @@
 
 
   </section>
-
 
 
   <section class="py-8 sm:py-14 px-[5%] sm:px-[16%] bg-primary" id="contact" style="background-color:#f6f6f6;">
